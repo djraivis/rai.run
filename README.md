@@ -1,8 +1,11 @@
-# Takuya's curated list of the tech
+# Origianally this was Takuya's curated list of the tech
 
 A curated list of the tech I use, built with Astro and Tailwind CSS
-
 https://uses.craftz.dog/
+
+## As Markdown Inkdrop App User - Raivis G
+
+I have forked this site from craftzdog followed his rules and I am using as blog post website to talk about "Tech notes I've put together as I learn"
 
 ## Tutorial
 
@@ -60,6 +63,12 @@ Then, run the following command:
 npm run live-import
 ```
 
+0r
+
+```sh
+yarn run live-import
+```
+
 ## License
 
 MIT License.
@@ -74,3 +83,5 @@ You can create your own homepage for free without notifying me by forking this p
 Looking for a Markdown note-taking app? Check out my app called Inkdrop:
 
 [![Inkdrop](https://github.com/craftzdog/dotfiles-public/raw/master/images/inkdrop.png)](https://www.inkdrop.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/87aa8712-b37a-449e-a25c-bc7075074f06/deploy-status)](https://app.netlify.com/sites/rai-run-tech-notes/deploys)
