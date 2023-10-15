@@ -1,14 +1,15 @@
 ---
-description: Git Commands Hey
+description: Explained
 slug: Regent Street
 public: true
 layout: ../../layouts/BlogPost.astro
-title: Git Commands and meaning
+title: Git Commands
 createdAt: 1676729992885
-updatedAt: 1696494422859
+updatedAt: 1697323869611
 tags: []
 heroImage: /posts/Regent Street_thumbnail.jpg
 ---
+
 
 
 - `init`: Initializes a new Git repository.
@@ -21,88 +22,87 @@ heroImage: /posts/Regent Street_thumbnail.jpg
 - `branch`: Lists, creates, or deletes branches.
 - `checkout`: Switches to a different branch.
 - `merge`: Integrates changes from one branch into another:
-    - git merge [branch]-to-merge
 - `reset`: Resets the repository to a previous commit.
 - `log`: Shows a history of commits.
 - `status`: Shows the status of files in the repository.
 - `diff`: Shows differences between commits or files.
-- `stash`: Temporarily saves changes that aren't ready to be committed.
+- `stash` - Temporarily saves changes that aren't ready to be committed.
+- `git init` initialize
+- `rm -fr .git` delete initial git init
+- `git config --global init.defaultBranch main` Change Local to Main, trunk or development
+- `git status` shows the list of files that are been added / modified 
+- `git branch` display list of branches
+- `git checkout main` is switch between branches 
+- `git checkout -b other-branch` create other brnach
 
 
-`git init` initialize
+<br>
 
-`rm -fr .git` delete initial git init
-
-`git config --global init.defaultBranch main` Change Local to Main, trunk or development
-
-`git status` shows the list of files that are been added / modified 
-
-`git diff` shows the inside the files the actual content
-
-`git branch` display list of branches
-
-`git checkout main` is switch between branches 
-
-`git checkout -b other-branch` create other brnach
+![Regent Street](</posts/Regent Street_regent-street.jpg>)
+Compiling my notes as I navigate the streets of London, Regent Street.
 
 
-`clone` Bring a repository that is hosted somewhere like Github into a folder on your local machine
 
-`add` Track your files and changes in Git
+## Other:
+- **git init**: Initialize a new Git repository.
+- **git clone [repository]**: Clone a remote repository to your local machine.
+- **git add [file]**: Add a file to the staging area.
+- **git commit -m "message"**: Commit changes with a descriptive message.
+- **git status**: View the status of files in the working directory.
+- **git push**: Push local changes to a remote repository.
+- **git pull**: Fetch and merge changes from a remote repository.
+- **git branch**: List branches and highlight the current branch.
+- **git checkout [branch]**: Switch to a different branch.
+- **git merge [branch]**: Merge a branch into the current branch.
+- **git diff**: Show changes between commits, branches, or files.
+- **git log**: Display commit history.
+- **git remote add [name] [url]**: Add a new remote repository.
+- **git remote -v**: List remote repositories.
+- **git stash**: Temporarily save changes that are not ready to be committed.
+- **git stash pop**: Apply the most recent stash and remove it from the stack.
+- **git reset [commit]**: Reset the repository to a specific commit.
+- **git revert [commit]**: Revert changes made in a specific commit.
+- **git fetch**: Download remote changes without merging.
+- **git branch -d [branch]**: Delete a local branch.
+- **git tag [name]**: Create a lightweight tag for a commit.
+- **git show [commit]**: Show information about a specific commit.
+- **git remote remove [name]**: Remove a remote repository.
+- **git config --global user.name "name"**: Set the author name for commits.
+- **git config --global user.email "email"**: Set the author email for commits.
+- **git blame [file]**: Show who last modified each line of a file.
+- **git fetch --prune**: Remove remote tracking branches that no longer exist on the remote.
+- **git checkout -b [branch]**: Create and switch to a new branch.
+- **git push --tags**: Push all tags to a remote repository.
+- **git remote show [name]**: Show detailed information about a remote repository.
+- **git cherry-pick [commit]**: Apply changes from a specific commit to the current branch.
+- **git rebase [branch]**: Reapply commits on top of another branch.
+- **git branch -r**: List remote branches.
+- **git clean -n**: Show which untracked files will be removed.
+- **git mv [old_path] [new_path]**: Move or rename a file.
+- **git reset --hard**: Discard all changes and reset to the last commit.
 
-`commit` Save your files in Git
+<br>
 
-`push` Upload Git commits to a remote repo, like Github
+```zsh
+`git reset` 
+`git reset README.md`
+`git reset HEAD~1` - options to undo
+`git log` - to display all the commits
+`git reset 8b98dfa159ae8f523eef508f7c9515a3fb8cfdd5` - this is undo the commits
+`git reset --hard 8b98dfa159ae8f523eef508f7c9515a3fb8cfdd5` - this is undo the commits and file changes as well
+```
 
-`pull` Download chnages from remote repo your local machine, the opposite of push
+<br>
 
-### ~/GitHub/raivis-work main > git diff feature-readme-instructions
-in this scenario **main** branch will accept changes ahead frm **feature-reaadme-instructions branch**
-
-### ~/GitHub/raivis-work main > git merge feature-readme-instructions
-this will copy and past the balck info into main branch
-
-### ~/GitHub/raivis-work main > git branch -d feature-readme-instructions
-this will delete the branch
-
-### git commit -am "add and commit at the same time"
-add and commit for the same time for the modified files
-
-### git add . & git commit -m "Comment goes here"
-add and commit
-
-### `git reset` 
-### `git reset README.md`
-### `git reset HEAD~1`
-options to undo
-
-### `git log`
-to display all the commits
-### `git reset 8b98dfa159ae8f523eef508f7c9515a3fb8cfdd5`
-this is undo the commits
-### `git reset --hard 8b98dfa159ae8f523eef508f7c9515a3fb8cfdd5`
-this is undo the commits and file changes as well
-
-## `git reflog`
-## `git revert 1234567`
-## `git reset --hard 1234567`
-
-## `git reset HEAD~1`
-
-## `git reset --hard HEAD~1`
-## `git push -f origin main`
-
-
-### `git fetch` 
-I will get all the changes that are remote repository
-I weill be able to upfate my slef, and will be aware of changes
-
-
-git rebase origin/main
-
-CirlceCI
-
-HDCPI - HDMI protected
+- **git log --author="name"**: Show commits by a specific author.
+- **git branch -a**: List all branches, local and remote.
+- **git diff [branch1] [branch2]**: Show differences between two branches.
+- **git show-branch**: Show branches and their commits.
+- **git config --global alias.[alias_name] [command]**: Create a custom Git alias.
+- **git fetch --all**: Fetch all remote branches.
+- **git bisect**: Find the commit that introduced a bug.
+- **git cherry-pick --continue**: Continue a cherry-pick operation after resolving conflicts.
+- **git commit --amend**: Amend the last commit with new
 
 
 
