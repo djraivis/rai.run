@@ -1,8 +1,6 @@
 ---
 const isProd = import.meta.env.PROD
-const baseAssetUrl = isProd
-  ? 'https://craftzdog.global.ssl.fastly.net/uses'
-  : ''
+const baseAssetUrl = isProd ? '' : '/mastheadvideo.webm' && '/mastheadvideo.m4v'
 ---
 
 <section class="relative mb-6 h-80 flex justify-center items-center">
@@ -20,7 +18,7 @@ const baseAssetUrl = isProd
       />
       <source
         src={baseAssetUrl + '/mastheadvideo.m4v'}
-        type="video/mp4; codecs=hvc1"
+        type="video/m4v; codecs=hvc1"
       />
     </video>
   </div>
