@@ -6,7 +6,8 @@ layout: ../../layouts/BlogPost.astro
 title: Git Commands
 createdAt: 1676729992885
 updatedAt: 1697323869611
-tags: []
+tags:
+  - Git
 heroImage: /posts/Regent Street_thumbnail.jpg
 ---
 
