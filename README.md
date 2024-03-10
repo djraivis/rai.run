@@ -9,7 +9,7 @@ I have forked this site from craftzdog followed his rules and I am using as blog
 
 ## Tutorial
 
-Watch how I built this website on YouTube:
+Watch how craftzdog built this website on YouTube:
 
 [![tutorial thumbnail](./docs/tutorial-thumb.jpg)](https://youtu.be/3_JE76PKBWE)
 
