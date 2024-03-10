@@ -5,11 +5,12 @@ public: true
 layout: ../../layouts/BlogPost.astro
 title: Git Commands
 createdAt: 1676729992885
-updatedAt: 1697323869611
+updatedAt: 1710070837628
 tags:
   - Git
 heroImage: /posts/Regent Street_thumbnail.jpg
 ---
+
 
 
 
@@ -38,11 +39,6 @@ heroImage: /posts/Regent Street_thumbnail.jpg
 
 
 <br>
-
-![Regent Street](</posts/Regent Street_regent-street.jpg>)
-Compiling my notes as I navigate the streets of London, Regent Street.
-
-
 
 ## Other:
 - **git init**: Initialize a new Git repository.

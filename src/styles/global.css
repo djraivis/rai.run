@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
   margin: 1.5rem 0 0.5rem;
@@ -69,7 +69,7 @@ a {
 }
 
 a:hover {
-  /* color: #0056b3; */
+  color: teal;
   text-decoration: solid;
 }
 
@@ -128,8 +128,11 @@ pre > code {
   padding: 1rem 1.5rem;
   overflow: auto;
   line-height: 1.5;
-  background-color: #0e1013;
-  border-radius: 0.3rem;
+}
+
+.github-dark {
+  /* background-color: #374252 !important; */
+  border-radius: 1.3rem;
 }
 
 pre > code {
@@ -160,5 +163,5 @@ summary {
   /* line-height: 1.2; */
   margin: 1rem 0 0.5rem;
   margin-left: 1.5rem;
-  color: yellowgreen;
+  color: teal;
 }

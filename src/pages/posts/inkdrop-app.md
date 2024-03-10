@@ -6,12 +6,20 @@ URL: inkdrop
 layout: ../../layouts/BlogPost.astro
 title: Integrating the Inkdrop
 createdAt: 1696446320561
-updatedAt: 1697323499508
+updatedAt: 1710068018547
 tags: []
-heroImage: /posts/inkdrop-app_thumbnail.gif
+heroImage: /posts/inkdrop-app_thumbnail.jpg
 ---
 
 Connecting this was a bit challenging, but I received excellent support from the developer, Takuya Matsuyama, who is the owner of this app. Find out more on [Inkdrops forum support.](https://forum.inkdrop.app/t/impossible-to-connect-live-export/4147/3)
+
+
+
+![123](/posts/inkdrop-app_123.gif)
+
+
+![1234](/posts/inkdrop-app_1234.jpg)
+
 
 
 I've compiled a list of valuable notes for initiating and enabling logging, helpful tips to address similar challenges should you encounter them.

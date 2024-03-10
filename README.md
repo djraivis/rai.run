@@ -1,9 +1,9 @@
-# Origianally this was Takuya's curated list of the tech
+# Takuya's curated list of the tech
 
 A curated list of the tech I use, built with Astro and Tailwind CSS
 https://uses.craftz.dog/
 
-## As Markdown Inkdrop App User - Raivis G
+## Inkdrop App User - Raivis G
 
 I have forked this site from craftzdog followed his rules and I am using as blog post website to talk about "Tech notes I've put together as I learn"
 
