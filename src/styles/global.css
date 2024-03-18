@@ -17,7 +17,7 @@ h1 {
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
-  margin: 1.5rem 0 0.5rem;
+  margin: 1.5rem 0 0.3rem;
 }
 
 h2 {
@@ -31,28 +31,29 @@ h3 {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.2;
-  margin: 1.5rem 0 0.5rem;
+  margin: 1.5rem 0 0.3rem;
 }
 
 h4 {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.2;
-  margin: 1.5rem 0 0.5rem;
+  margin: 1.5rem 0 0.3rem;
+  color: teal;
 }
 
 h5 {
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.2;
-  margin: 1.5rem 0 0.5rem;
+  margin: 1.5rem 0 0.3rem;
 }
 
 h6 {
   font-size: 0.75rem;
   font-weight: 700;
   line-height: 1.2;
-  margin: 1.5rem 0 0.5rem;
+  margin: 1.5rem 0 0.3rem;
 }
 
 p {
@@ -77,14 +78,6 @@ blockquote {
   margin: 0;
   padding: 0 1rem;
   border-left: 0.25rem solid #eceeef;
-}
-
-blockquote > :first-child {
-  margin-top: 0;
-}
-
-blockquote > :last-child {
-  margin-bottom: 0;
 }
 
 img {
@@ -126,13 +119,13 @@ pre code {
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
-  overflow: auto;
+  overflow: initial;
   line-height: 1.5;
 }
 
 .github-dark {
   /* background-color: #374252 !important; */
-  border-radius: 1.3rem;
+  border-radius: 1rem;
 }
 
 pre > code {
@@ -161,7 +154,7 @@ ul > li {
 
 summary {
   /* line-height: 1.2; */
-  margin: 1rem 0 0.5rem;
+  margin: 1rem 0 0.3rem;
   margin-left: 1.5rem;
   color: teal;
 }

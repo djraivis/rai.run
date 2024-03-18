@@ -1,39 +1,45 @@
 ---
 description: >-
-  That takes in a string and a character and returns the number of occurrences
-  of that character in the string.
+  Takes in a string and a character; returns the number of occurrences of that
+  character in the string.
 slug: countOccurrences
 public: true
 layout: ../../layouts/BlogPost.astro
 title: Count Occurrences
 createdAt: 1705018772359
-updatedAt: 1710081716149
+updatedAt: 1710368312774
 tags:
   - JavaScript
 heroImage: /posts/countOccurrences_thumbnail.jpg
 ---
-# Count Occurrences
 
-### Function Signature
+## Function Signature
 
 ```js
-/**
- * Returns the number of occurrences of a character in a string.
+
+ // Returns the number of occurrences of a character in a string.
  * @param {string} str - The string to search.
  * @param {string} char - The character to search for.
  * @returns {number} - The number of occurrences of the character in the string.
- */
+
 function countOccurrences(str: string, char: string): number;
-```
 
-### Examples
-
-```js
+Examples
 countOccurrences('hello', 'l'); // 2
 countOccurrences('hello', 'z'); // 0
 ```
 
-###### Solution 1
+### Test Cases
+
+```js
+test('Count Occurrences of a Character', () => {
+  expect(countOccurrences('hello', 'l')).toBe(2);
+  expect(countOccurrences('programming', 'm')).toBe(2);
+  expect(countOccurrences('banana', 'a')).toBe(3);
+});
+```
+
+#### Solution 1
 
 ```js
 function countOccurrences(str, char) {
@@ -52,8 +58,7 @@ function countOccurrences(str, char) {
 
 ```
 
-
-###### Solution 2
+#### Solution 2
 ```js
 function countOccurrences(str, char) {
     let count = 0;
@@ -71,18 +76,8 @@ const myCharacter = "o";
 console.log(countOccurrences(myString, myCharacter)); // Output: 2
 ```
 
-###### Solution 3
+#### Solution 3
 ```js
 const countOccurrences = (str, char) => str.split(char).length - 1;
 ```
 
-
-### Test Cases
-
-```js
-test('Count Occurrences of a Character', () => {
-  expect(countOccurrences('hello', 'l')).toBe(2);
-  expect(countOccurrences('programming', 'm')).toBe(2);
-  expect(countOccurrences('banana', 'a')).toBe(3);
-});
-```
