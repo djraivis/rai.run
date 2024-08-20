@@ -7,7 +7,7 @@ public: true
 layout: ../../layouts/BlogPost.astro
 title: Count Occurrences
 createdAt: 1705018772359
-updatedAt: 1710368312774
+updatedAt: 1712231618171
 tags:
   - JavaScript
 heroImage: /posts/countOccurrences_thumbnail.jpg
@@ -39,7 +39,7 @@ test('Count Occurrences of a Character', () => {
 });
 ```
 
-#### Solution 1
+#### Solution
 
 ```js
 function countOccurrences(str, char) {

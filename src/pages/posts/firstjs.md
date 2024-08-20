@@ -5,7 +5,7 @@ public: true
 layout: ../../layouts/BlogPost.astro
 title: First JS
 createdAt: 1705009954772
-updatedAt: 1710371656667
+updatedAt: 1723109977946
 tags:
   - JavaScript
 heroImage: /posts/firstjs_thumbnail.jpg
@@ -146,3 +146,4 @@ function printHelloWorld() {
 }
 ```
 </details>
+test
