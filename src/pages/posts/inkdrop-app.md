@@ -6,12 +6,18 @@ URL: inkdrop
 layout: ../../layouts/BlogPost.astro
 title: Integrating Inkdrop
 createdAt: 1696446320561
-updatedAt: 1710370603862
+updatedAt: 1724370597021
 tags: []
 heroImage: /posts/inkdrop-app_thumbnail.jpg
 ---
 
+1123
+ksacnjknsac
+
+
 Connecting this was a bit challenging, but I received excellent support from the developer, Takuya Matsuyama, who is the owner of this app. Find out more on [Inkdrops forum support.](https://forum.inkdrop.app/t/impossible-to-connect-live-export/4147/3)
+
+![thumbnail](/posts/inkdrop-app_thumbnail.png)
 
 ![CleanShot 2024-03-10 at 10 .14.59@2x](/posts/inkdrop-app_clean-shot-2024-03-10-at-10-14-59-2-x.jpg)
 
@@ -71,3 +77,109 @@ ipm-beta install dev-tools
 ```
 
 ### Inkdrop Desktop [v5.6.0 beta.3](https://forum.inkdrop.app/t/inkdrop-desktop-v5-6-0-beta-3/4195) is released.
+
+
+Installation on Inkdrop
+This needs to included in .env file in the project
+
+```js
+DEBUG="inkdrop:export:info,inkdrop:export:error"
+DEBUG='*'
+INKDROP_USERNAME="username"
+INKDROP_PASSWORD="password"
+INKDROP_PORT=19840
+INKDROP_BOOKID="book:bookID"
+```
+
+This needs to be added in the below file
+```json
+   "server": {
+        "auth": {
+          "password": "password",
+          "username": "username"
+        },
+        "bindAddress": "127.0.0.1",
+        "enabled": true,
+        "port": 19840
+      }
+```
+
+### Inkdrop Application Support Json File
+```json
+{
+  "*": {
+    "core": {
+      "db": {
+         "machineId": "machineID"
+      },
+      "lastNavigationState": {
+        "editingNoteId": "note:noteID",
+        "queryContext": {
+          "bookId": "book:bookID",
+          "filterKeyword": "",
+          "includeChildren": false,
+          "mode": "book",
+          "sort": [
+            {
+              "pinned": "desc"
+            },
+            {
+              "updatedAt": "desc"
+            }
+          ]
+        },
+        "sidebar": {
+          "workspace": {
+            "visible": false
+          }
+        }
+      },
+      "mainWindow": {
+        "fullscreen": false,
+        "maximized": false,
+        "position": {
+          "x": 193,
+          "y": -1232
+        },
+        "sideBar": {
+          "collapsedBooks": [
+            "book:4ulSioEn-"
+          ]
+        },
+        "size": {
+          "h": 964,
+          "w": 1372
+        }
+      },
+      "server": {
+        "auth": {
+          "password": "password",
+          "username": "username"
+        },
+        "bindAddress": "127.0.0.1",
+        "enabled": true,
+        "port": 19840
+      }
+    },
+    "editor": {
+      "fontSize": 11,
+      "viewMode": "edit"
+    }
+  }
+}
+
+```
+
+### [Configurations](https://developers.inkdrop.app/guides/access-the-local-database#configurations)
+
+- `core.server.enabled` - Specify `true` to enable the HTTP server. Default is `false`.
+- `core.server.port` - Defines the port number to listen. Default is `19840`.
+- `core.server.bindAddress` - Defines the IP address to listen. Default is `127.0.0.1`.
+- `core.server.auth.{username,password}` - Defines Basic auth credentials.
+
+###
+
+1. <https://github.com/inkdropapp/inkdrop-live-export#install-dev-tools-plugin>
+2. <https://developers.inkdrop.app/guides/access-the-local-database#accessing-via-http-advanced>
+3. <https://docs.inkdrop.app/reference/user-data-directory>
+4. <https://my.inkdrop.app/plugins/dev-tools>

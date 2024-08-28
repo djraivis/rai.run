@@ -5,12 +5,16 @@ public: true
 layout: ../../layouts/BlogPost.astro
 title: Git Commands
 createdAt: 1676729992885
-updatedAt: 1710368268684
+updatedAt: 1724763810900
 tags:
   - Git
 heroImage: /posts/git_thumbnail.jpg
 ---
 
+- git branch --column
+- git config --global branch.sort -committerdate
+- 
+- 
 - `init`: Initializes a new Git repository.
 - `clone`: Copies an existing Git repository to a new location.
 - `add`: Adds files or changes to the staging area.
