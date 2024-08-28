@@ -6,14 +6,10 @@ URL: inkdrop
 layout: ../../layouts/BlogPost.astro
 title: Integrating Inkdrop
 createdAt: 1696446320561
-updatedAt: 1724370597021
+updatedAt: 1724859060899
 tags: []
 heroImage: /posts/inkdrop-app_thumbnail.jpg
 ---
-
-1123
-ksacnjknsac
-
 
 Connecting this was a bit challenging, but I received excellent support from the developer, Takuya Matsuyama, who is the owner of this app. Find out more on [Inkdrops forum support.](https://forum.inkdrop.app/t/impossible-to-connect-live-export/4147/3)
 
