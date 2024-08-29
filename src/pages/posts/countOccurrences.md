@@ -10,6 +10,7 @@ createdAt: 1705018772359
 updatedAt: 1712231618171
 tags:
   - JavaScript
+  - All
 heroImage: /posts/countOccurrences_thumbnail.jpg
 ---
 

@@ -8,6 +8,7 @@ createdAt: 1676729992885
 updatedAt: 1724763810900
 tags:
   - Git
+  - All
 heroImage: /posts/git_thumbnail.jpg
 ---
 

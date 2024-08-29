@@ -1,18 +1,15 @@
-# Takuya's curated list of the tech
+# Inkdrop App User - Raivis
 
-A curated list of the tech I use, built with Astro and Tailwind CSS
-https://uses.craftz.dog/
-
-## Inkdrop App User - Raivis G
-
-I have forked this site from craftzdog followed his rules and I am using as blog post website to talk about "Tech notes I've put together as I learn"
+Welcome to my corner of the coding universe! I’ve taken inspiration from Craftzdog’s brilliant framework, adding my own touch to create this blog where I share the tech notes and insights I gather along my coding journey. This space is my digital notebook, where every post is a reflection of the challenges I tackle and the discoveries I make. Dive in to explore the evolving landscape of tech through my eyes, as I document and discuss the nuances of programming and development.
 
 ## Tutorial
 
 Watch how craftzdog built this website on YouTube:
 
-[![tutorial thumbnail](./docs/tutorial-thumb.jpg)](https://youtu.be/3_JE76PKBWE)
+[![tutorial thumbnail](./docs/cover-thumb.jpg)]
 
+
+## Link – originally created by Craftzdog
 <https://youtu.be/3_JE76PKBWE>
 
 ## Stack
