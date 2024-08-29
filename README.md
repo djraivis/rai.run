@@ -1,16 +1,8 @@
 # Inkdrop App User - Raivis
 
-Welcome to my corner of the coding universe! I’ve taken inspiration from Craftzdog’s brilliant framework, adding my own touch to create this blog where I share the tech notes and insights I gather along my coding journey. This space is my digital notebook, where every post is a reflection of the challenges I tackle and the discoveries I make. Dive in to explore the evolving landscape of tech through my eyes, as I document and discuss the nuances of programming and development.
+Welcome to my corner of the coding universe! I’ve taken inspiration from Craftzdog’s brilliant work, adding my own touch to create this blog where I share the tech notes and insights I gather along my coding journey. This space is my tech notebook, where every post is a reflection of the challenges I tackle and the discoveries I make. Dive in to explore the evolving landscape of tech through my eyes, as I document and discuss the nuances of programming and development.
 
-## Tutorial
-
-Watch how craftzdog built this website on YouTube:
-
-[![tutorial thumbnail](./docs/cover-thumb.jpg)]
-
-
-## Link – originally created by Craftzdog
-<https://youtu.be/3_JE76PKBWE>
+![thumbnail](./docs/cover-thumb.jpg)
 
 ## Stack
 
@@ -66,6 +58,11 @@ npm run live-import
 yarn run live-import
 ```
 
+## Tutorial
+
+Watch how craftzdog built this website on YouTube:
+<https://youtu.be/3_JE76PKBWE>
+
 ## License
 
 MIT License.
@@ -82,3 +79,4 @@ Looking for a Markdown note-taking app? Check out my app called Inkdrop:
 [![Inkdrop](https://github.com/craftzdog/dotfiles-public/raw/master/images/inkdrop.png)](https://www.inkdrop.app/)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/87aa8712-b37a-449e-a25c-bc7075074f06/deploy-status)](https://app.netlify.com/sites/rai-run-tech-notes/deploys)
+
