@@ -9,7 +9,6 @@ createdAt: 1696446320561
 updatedAt: 1724859060899
 tags:
   - JavaScript
-  - All
 heroImage: /posts/inkdrop-app_thumbnail.jpg
 ---
 

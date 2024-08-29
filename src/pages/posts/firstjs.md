@@ -8,7 +8,6 @@ createdAt: 1705009954772
 updatedAt: 1724942223210
 tags:
   - JavaScript
-  - All
 heroImage: /posts/firstjs_thumbnail.jpg
 ---
 
