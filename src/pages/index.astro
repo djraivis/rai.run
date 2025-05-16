@@ -1,5 +1,5 @@
 ---
-import type { ImageMetadata } from 'astro';
+import type { ImageMetadata } from 'astro'
 import BaseHead from '../components/BaseHead.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
@@ -8,20 +8,18 @@ import Body from '../components/Body.astro'
 import Content from '../components/Content.astro'
 import { IoArrowForward } from 'react-icons/io5'
 import Masthead from '../components/Masthead.astro'
-import { Image } from 'astro:assets';
+import { Image } from 'astro:assets'
 import CreatedWithSection from '../components/CreatedWithSection.astro'
 
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}');
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}')
 console.log('images:', images)
 
 const posts = (await Astro.glob('./posts/*.md')).sort(
-  (a: any, b: any) =>
-    new Date(b.frontmatter.createdAt).valueOf() -
-    new Date(a.frontmatter.createdAt).valueOf()
+  (a: any, b: any) => new Date(b.frontmatter.createdAt).valueOf() - new Date(a.frontmatter.createdAt).valueOf()
 )
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
@@ -31,43 +29,37 @@ const posts = (await Astro.glob('./posts/*.md')).sort(
     <main class="pt-[56px]">
       <Masthead />
       <Content>
-        <section>
-          <p class="mb-8 indent-4">
-            <a
-            class="inline-flex items-center gap-1 indent-1 text-teal-600"
-            href="https://djraivis.github.io/"> I'm Rai <IoArrowForward className="inline" />
-          </a>
-             an active problem-solver who likes customizing .nvim, .tmux, and WezTerm. My ideal sessions take place on rooftop terraces overlooking the city, where I blend my attachment to coding with a bit of photography. Join me as I document and share my journey, discovering how it all comes together 🌟
-          
-          </p>
-        </section>
+        <>
+          <div class="intro-terminal">
+            <pre>
+            &gt; hi, i'm raivis
+            &gt; solving js challenges
+            &gt; logging notes, patterns, and progress
+            &gt; this is my javascript journey
+              </pre>
+          </div>
+        </>
         <section>
           <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
             {
               posts.map(post => {
                 const heroImageAsset = images[post.frontmatter.heroImage]
-                const heroImageSrc =  heroImageAsset ? heroImageAsset() : post.frontmatter.heroImage
+                const heroImageSrc = heroImageAsset ? heroImageAsset() : post.frontmatter.heroImage
                 return (
-                <li class="text-center mb-4">
-                  <a href={post.url}>
-                    <Image
-                      class="border border-slate-300 dark:border-zinc-700 rounded-xl"
-                      src={heroImageSrc}
-                      width={720}
-                      height={720 / 1.777}
-                      alt="Thumbnail"
-                    />
-                    <div class="mt-3 text-xl font-bold">
-                      {post.frontmatter.title}
-                    </div>
-                    {post.frontmatter.description && (
-                      <div class="opacity-70">
-                        {post.frontmatter.description}
-                      </div>
-                    )}
-                  </a>
-                </li>
-              )
+                  <li class="text-center mb-4">
+                    <a href={post.url}>
+                      <Image
+                        class="border border-slate-300 dark:border-zinc-700 rounded-xl"
+                        src={heroImageSrc}
+                        width={720}
+                        height={720 / 1.777}
+                        alt="Thumbnail"
+                      />
+                      <div class="mt-3 text-xl font-bold">{post.frontmatter.title}</div>
+                      {post.frontmatter.description && <div class="opacity-70">{post.frontmatter.description}</div>}
+                    </a>
+                  </li>
+                )
               })
             }
           </ul>

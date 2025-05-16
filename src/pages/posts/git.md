@@ -1,15 +1,76 @@
 ---
-description: To remember
+description: null
 slug: git
 public: true
 layout: ../../layouts/BlogPost.astro
-title: Git Commands
+title: 🌱 Git Aliases Cheat Sheet
 createdAt: 1676729992885
-updatedAt: 1724946376613
+updatedAt: 1746600373616
 tags:
   - Git
 heroImage: /posts/git_thumbnail.jpg
 ---
+
+
+## 🔹 Status & Branches
+- `gs` → git status  
+- `gst` → git status -sb  
+- `gb` → git branch  
+- `gbr` → current branch name  
+- `gco` → git checkout  
+- `gcl` → git clone  
+
+## 🔹 Add & Commit
+- `ga` → git add  
+- `gaa` → git add .  
+- `gcm "msg"` → git commit -m "msg"  
+- `gcam "msg"` → git commit -am "msg"  
+- `gca` → git commit --amend  
+- `gcan` → git commit --amend --no-edit  
+
+## 🔹 Push & Pull
+- `gp` → git push  
+- `gpu` → git push -u origin HEAD  
+- `gpo` → git push origin  
+- `gpl` → git pull --rebase  
+
+## 🔹 Diff, Restore, Reset
+- `gd` → git diff  
+- `gr` → git restore  
+- `grs` → git restore --staged .  
+- `greset` → git reset  
+- `grhh` → git reset --hard HEAD  
+- `gundo` → git reset --soft HEAD~1  
+
+## 🔹 Logs & Blame
+- `gl` → git log --oneline --graph --decorate --all  
+- `glog` → same as above  
+- `gbl` → git blame -w -M -C  
+
+## 🔹 Stash
+- `gstash` → git stash  
+- `gstashp` → git stash pop  
+- `gstashl` → git stash list  
+
+## 🔹 Tags & Submodules
+- `gtag` → git tag  
+- `gtags` → git tag -n  
+- `gsu` → git submodule update --init --recursive  
+
+## 🔹 Delete
+- `gbd` → git branch -d  
+- `gbD` → git branch -D  
+- `gbrd NAME` → git push origin --delete NAME  
+
+## 🔹 Misc
+- `gcp` → git cherry-pick  
+- `grevert` → git revert  
+- `gurl` → show repo remote URL  
+
+---
+
+
+## Git Commands Meanings
 
 - `git branch --column`
 - `git config --global branch.sort -committerdate`
@@ -43,7 +104,4 @@ heroImage: /posts/git_thumbnail.jpg
 `git commit -m "P3PD-707: comments comments"`
 `git push -u origin  P3PD-707-something-something`
 ```
-
-
-
 
